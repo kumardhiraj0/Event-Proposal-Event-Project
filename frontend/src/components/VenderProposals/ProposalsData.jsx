@@ -21,7 +21,7 @@ function ProposalsData() {
     } else {
       const fetchData = async () => {
         try {
-          const response = await fetch("https://main-event-praposal.onrender.com/proposalsData", {
+          const response = await fetch("https://event-proposal-page-spg5.onrender.com/proposalsData", {
             headers: {
               "Accept": "application/json",
               "Content-Type": "application/json",
@@ -42,7 +42,7 @@ function ProposalsData() {
     try {
       const confirmed = window.confirm("Are you sure you want to delete this proposal?");
     if (confirmed) {
-      await axios.delete(`https://main-event-praposal.onrender.com/proposalDelete/${id}`);
+      await axios.delete(`https://event-proposal-page-spg5.onrender.com/proposalDelete/${id}`);
       setProposals(proposals.filter((eachData) => eachData._id !== id));
     }
     } catch (error) {

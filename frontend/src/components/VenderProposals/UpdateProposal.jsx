@@ -23,7 +23,7 @@ const navigate = useNavigate()
 
 
   useEffect(()=>{
-    axios.get(`https://main-event-praposal.onrender.com/update/${id}`).then(res=>{
+    axios.get(`https://event-proposal-page-spg5.onrender.com/update/${id}`).then(res=>{
 
     //  console.log("I am Here")  
 
@@ -144,7 +144,7 @@ const navigate = useNavigate()
       postImage:postImage,
 
     }
-axios.put(`https://main-event-praposal.onrender.com/update/${id}`,objsubmit)
+axios.put(`https://event-proposal-page-spg5.onrender.com/update/${id}`,objsubmit)
 .then(response=>console.log(response))
 .then(()=>navigate("/proposalsData/"))
 .catch(error=>console.log(error))

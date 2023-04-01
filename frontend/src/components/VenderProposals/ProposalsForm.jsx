@@ -99,7 +99,7 @@ const ProposalsForm = () => {
       postImage:postImage,
 
     }
-axios.post("https://main-event-praposal.onrender.com/createProposals",objsubmit)
+axios.post("https://event-proposal-page-spg5.onrender.com/createProposals",objsubmit)
 .then(response=>console.log(response))
 .then(()=>navigate("/proposalsData/"))
 .catch(error=>console.log(error))
